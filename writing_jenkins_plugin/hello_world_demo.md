@@ -22,11 +22,13 @@ Execute mvn -version command
 
 
 # Create a local folder for the source code:
+(if the environment is well set up, we want to start from this step)
 mkdir -p hello-world
 cd hello-world
 
 
 # Create a plugin from the Jenkins templates:
+(the main command of plugin's creation)
 mvn -U archetype:generate -Dfilter="io.jenkins.archetypes:"
 
 mvn verify

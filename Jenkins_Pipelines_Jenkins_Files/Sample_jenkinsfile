@@ -47,6 +47,7 @@ pipeline {
         }
     }
 
+    // -- After verifying the success or the failure of the pipeline's build
     post {
         success {
             // Actions to perform when the pipeline succeeds

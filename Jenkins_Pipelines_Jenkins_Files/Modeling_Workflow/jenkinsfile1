@@ -1,5 +1,7 @@
-pipeline {
+// the pipeline's build will fail because the environment variable LOG_LEVEL is defined just locally for the step 'Build'
     
+pipeline {
+
     agent any
     environment {
         RELEASE='20.04'

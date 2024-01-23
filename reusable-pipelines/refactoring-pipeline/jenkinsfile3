@@ -12,6 +12,7 @@ pipeline {
     stages {
         stage('Audit tools') {
             steps {
+                // the correct syntax of executing multiple cmds once a time
                 sh '''
                   git version
                   java -version
